@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    background-color: #141b2e;
+}
+
+.btn {
+    @apply bg-blue-800 border-white rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider animate-pulse;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.box {
+    @apply bg-blue-400 border-slate-500 mx-auto flex flex-col justify-center text-center box-content h-32 w-48 font-bold rounded-2xl bg-blend-color;
+    /*animation: spin 2s normal infinite;*/
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.mainContainer {
+    background-color: #0b0d19;
+    @apply container border-solid border-2 border-blue-900 mx-auto rounded-xl py-9
+}
+
+/*@keyframes spin {*/
+/*    from {*/
+/*        transform: rotate(0deg);*/
+/*    }*/
+/*    to {*/
+/*        transform: rotate(360deg);*/
+/*    }*/
+/*}*/
