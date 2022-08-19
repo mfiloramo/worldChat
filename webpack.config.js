@@ -1,7 +1,9 @@
 const { resolve } = require('path');
 const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const dotenv = require('dotenv-webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const { HotModuleReplacementPlugin } = require('webpack')
 
 
 module.exports = {
@@ -26,6 +28,7 @@ module.exports = {
     },
     open: true,
     hot: true,
+    historyApiFallback: true,
     proxy: {
       '/**': {
         target: 'http://localhost:3035',
@@ -58,9 +61,13 @@ module.exports = {
       },
       {
         test: /\.(css|scss|sass)$/,
-        // exclude: /node_modules/,
+        exclude: /node_modules/,
         include: resolve(__dirname, 'client'),
-        use: ['style-loader', 'css-loader', 'postcss-loader'],
+        use: [
+          'style-loader',
+          'css-loader',
+          'postcss-loader',
+        ],
       },
       {
         test: /\.(svg|webp|ico|png|jpg|jpe?g|gif)$/i,
@@ -77,6 +84,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: resolve(__dirname, 'client', 'index.html'),
     }),
-    new dotenv(),
+    new MiniCssExtractPlugin(),
+    new dotenv,
   ],
-};
+}

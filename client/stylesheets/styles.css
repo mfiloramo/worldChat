@@ -2,8 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
 html {
-    background-color: #141b2e;
+    height: 100%;
+    @apply
+        bg-gradient-to-b from-slate-900 to-slate-800
+}
+
+body {
+    min-height: 100%;
 }
 
 .btn {
@@ -53,5 +64,41 @@ html {
         mx-auto
         rounded-xl
         py-9
-        max-w-screen-lg
+        max-w-screen-md
+        shadow-xl
+        w-4/5
+}
+
+.testNav {
+    /*background-color: #253964;*/
+    overflow: hidden;
+    @apply
+        bg-gradient-to-b from-sky-900 to-sky-700
+        border-r-2
+        border-b-2
+        border-l-2
+        border-blue-400
+        rounded-b-2xl
+}
+
+/* Style the links inside the navigation bar */
+.testNav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.testNav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.testNav a.active {
+    background-color: #04AA6D;
+    color: white;
 }

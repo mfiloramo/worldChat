@@ -7,21 +7,29 @@ function TestClient() {
   /** STATE OF TESTCLIENT WOULD BE DECLARED HERE USING USESTATE HOOKS */
   // ADD STATE INITIALIZATION CODE HERE
 
+
   return (
-    <div className={"mainContainer"}>
-      <meta charSet={"UTF-8"} />
-      <meta name={"viewport"} content={"width=device-width, initial-scale=1.0"} />
-      <title>Test Client</title>
-      <link rel={"stylesheet"} type={"text/css"} href={"../stylesheets/styles.css"} />
-      <div className={'box'}>This is a Tailwind box</div>
+    // ADD ALL TAILWIND STYLES TO THE CSS BECAUSE IT CLUTTERS UP THE REACT CODE, PLUS IT DYNAMICALLY UPDATES EVERYTHING
+    // WHEN RUNNING A DEV SERVER.
+    <div>
+
+      <div className={"testNav"}>
+        <a className={"active"} href={"#home"}>Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
       <br/>
-      <button className={'btn'} onClick={() => {console.log('hello there!')}}>This is a Tailwind button</button>
+
+    <div className={"mainContainer"}>
+      <div className={"box"}>This is a Tailwind box</div>
+      <br/>
+      <button className={"btn"} onClick={() => {console.log('hello there!')}}>This is a Tailwind button</button>
+    </div>
+
     </div>
   )
 }
 
-/**
- react-dom.development.js:86 Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
- */
 
 export default TestClient;
