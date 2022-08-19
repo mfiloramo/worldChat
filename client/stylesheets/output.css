@@ -1060,6 +1060,12 @@ body {
   min-height: 100%;
 }
 
+.btn {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
 @keyframes pulse {
   50% {
     opacity: .5;
@@ -1084,9 +1090,6 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
 }
 
 .box {
@@ -1110,9 +1113,11 @@ body {
 
 .mainContainer {
   background-color: #0b0d19;
+  float: right;
+  margin-right: 0.5rem;
   margin-top: 1rem;
-  margin-left: 20rem;
-  width: 80%;
+  width: 60%;
+  flex-direction: row;
   border-radius: 0.75rem;
   border-width: 2px;
   border-style: solid;
@@ -1167,4 +1172,23 @@ body {
 .testNav a.active {
   background-color: #2186d3;
   color: white;
+}
+
+.chatRooms {
+  background-color: #0b0d19;
+  float: left;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  width: 20%;
+  flex-direction: row;
+  border-radius: 0.75rem;
+  border-width: 2px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(30 58 138 / var(--tw-border-opacity));
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
 }

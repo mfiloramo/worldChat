@@ -21,6 +21,10 @@ function TestClient() {
       </div>
       <br/>
 
+    <div className={"chatRooms"}>
+
+    </div>
+
     <div className={"mainContainer"}>
       <div className={"box"}>This is a Tailwind box</div>
       <br/>
