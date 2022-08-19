@@ -1090,6 +1090,8 @@ body {
 }
 
 .box {
+  margin-left: auto;
+  margin-right: auto;
   box-sizing: content-box;
   display: flex;
   height: 8rem;
@@ -1104,50 +1106,13 @@ body {
   text-align: center;
   font-weight: 700;
   background-blend-mode: color;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .mainContainer {
   background-color: #0b0d19;
-  width: 100%
-}
-
-@media (min-width: 640px) {
-  .mainContainer {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .mainContainer {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .mainContainer {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .mainContainer {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .mainContainer {
-    max-width: 1536px;
-  }
-}
-
-.mainContainer {
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 1rem;
+  margin-left: 20rem;
   width: 80%;
-  max-width: 768px;
   border-radius: 0.75rem;
   border-width: 2px;
   border-style: solid;
@@ -1157,11 +1122,10 @@ body {
   padding-bottom: 2.25rem;
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
 }
 
 .testNav {
-  /*background-color: #253964;*/
   overflow: hidden;
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
@@ -1174,7 +1138,10 @@ body {
   --tw-gradient-from: #0c4a6e;
   --tw-gradient-to: rgb(12 74 110 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: #0369a1
+  --tw-gradient-to: #0369a1;
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
 }
 
 /* Style the links inside the navigation bar */
@@ -1191,13 +1158,13 @@ body {
 /* Change the color of links on hover */
 
 .testNav a:hover {
-  background-color: #ddd;
+  background-color: #a5e2ff;
   color: black;
 }
 
 /* Add a color to the active/current link */
 
 .testNav a.active {
-  background-color: #04AA6D;
+  background-color: #2186d3;
   color: white;
 }
