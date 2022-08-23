@@ -99,7 +99,7 @@ body {
 /* Add a color to the active/current link */
 .testNav a.active {
     background-color: #2186d3;
-    color: black;
+    color: white;
 }
 
 .chatRooms {
