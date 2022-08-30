@@ -52,23 +52,6 @@ body {
         bg-blend-color;
 }
 
-.mainContainer {
-    background-color: #0b0d19;
-    position: relative;
-    @apply
-        border-solid
-        border-2
-        border-blue-900
-        flex-row
-        float-right
-        mr-28
-        mt-4
-        py-9
-        rounded-xl
-        shadow-xl
-        w-3/5
-}
-
 .testNav {
     overflow: hidden;
     @apply
@@ -103,18 +86,44 @@ body {
     color: black;
 }
 
-.chatRooms {
+.mainContainer {
     background-color: #0b0d19;
+    height: 500px;
+    width: 65%;
+    position: relative;
     @apply
         border-solid
         border-2
         border-blue-900
         flex-row
-        float-left
-        ml-24
+        float-right
+        right-20
+        /*justify-between*/
+        ml-auto
+        /*mr-auto*/
         mt-4
         py-9
         rounded-xl
         shadow-xl
-        w-1/5
+}
+.chatRooms {
+    background-color: #0b0d19;
+    height: 600px;
+    width: 20%;
+    position: relative;
+    @apply
+        border-solid
+        border-2
+        border-blue-900
+        /*flex-row*/
+        float-left
+        left-20
+        /*justify-between*/
+        flex-auto
+        ml-auto
+        mr-auto
+        mt-4
+        py-9
+        rounded-xl
+        shadow-xl
 }

@@ -1189,26 +1189,6 @@ body {
   background-blend-mode: color;
 }
 
-.mainContainer {
-  background-color: #0b0d19;
-  position: relative;
-  float: right;
-  margin-right: 7rem;
-  margin-top: 1rem;
-  width: 60%;
-  flex-direction: row;
-  border-radius: 0.75rem;
-  border-width: 2px;
-  border-style: solid;
-  --tw-border-opacity: 1;
-  border-color: rgb(30 58 138 / var(--tw-border-opacity));
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
-}
-
 .testNav {
   overflow: hidden;
   border-bottom-right-radius: 1rem;
@@ -1253,13 +1233,39 @@ body {
   color: black;
 }
 
+.mainContainer {
+  background-color: #0b0d19;
+  height: 500px;
+  width: 65%;
+  position: relative;
+  right: 5rem;
+  float: right;
+  margin-left: auto;
+  margin-top: 1rem;
+  flex-direction: row;
+  border-radius: 0.75rem;
+  border-width: 2px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(30 58 138 / var(--tw-border-opacity));
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
 .chatRooms {
   background-color: #0b0d19;
-  float: left;
-  margin-left: 6rem;
-  margin-top: 1rem;
+  height: 600px;
   width: 20%;
-  flex-direction: row;
+  position: relative;
+  left: 5rem;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  flex: 1 1 auto;
   border-radius: 0.75rem;
   border-width: 2px;
   border-style: solid;
