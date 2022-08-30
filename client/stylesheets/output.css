@@ -1191,8 +1191,9 @@ body {
 
 .mainContainer {
   background-color: #0b0d19;
+  position: relative;
   float: right;
-  margin-right: 0.5rem;
+  margin-right: 7rem;
   margin-top: 1rem;
   width: 60%;
   flex-direction: row;
@@ -1255,7 +1256,7 @@ body {
 .chatRooms {
   background-color: #0b0d19;
   float: left;
-  margin-left: 0.5rem;
+  margin-left: 6rem;
   margin-top: 1rem;
   width: 20%;
   flex-direction: row;

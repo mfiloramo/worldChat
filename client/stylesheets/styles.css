@@ -54,13 +54,14 @@ body {
 
 .mainContainer {
     background-color: #0b0d19;
+    position: relative;
     @apply
         border-solid
         border-2
         border-blue-900
         flex-row
         float-right
-        mr-2
+        mr-28
         mt-4
         py-9
         rounded-xl
@@ -110,7 +111,7 @@ body {
         border-blue-900
         flex-row
         float-left
-        ml-2
+        ml-24
         mt-4
         py-9
         rounded-xl
