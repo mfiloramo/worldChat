@@ -2,8 +2,8 @@ const { resolve } = require('path');
 const webpack = require('webpack');
 const dotenv = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const { HotModuleReplacementPlugin } = require('webpack')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { HotModuleReplacementPlugin } = require('webpack');
 
 
 module.exports = {
