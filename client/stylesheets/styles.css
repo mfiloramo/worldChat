@@ -88,39 +88,35 @@ body {
 
 .mainContainer {
     background-color: #0b0d19;
+    display: inline;
     height: 550px;
     width: 65%;
-    position: relative;
     @apply
         border-solid
         border-2
         border-blue-900
-        flex-row
         float-right
         right-20
-        /*justify-between*/
         ml-auto
-        /*mr-auto*/
+        mr-10
         mt-4
         py-9
         rounded-xl
         shadow-xl
 }
+
 .chatRooms {
+    display: inline;
     background-color: #0b0d19;
     height: 600px;
     width: 20%;
-    position: relative;
     @apply
         border-solid
         border-2
         border-blue-900
-        /*flex-row*/
         float-left
         left-20
-        /*justify-between*/
-        flex-auto
-        ml-auto
+        ml-10
         mr-auto
         mt-4
         py-9
