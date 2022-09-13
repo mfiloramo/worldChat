@@ -123,3 +123,22 @@ body {
         rounded-xl
         shadow-xl
 }
+
+.chatInput {
+    background-color: #ffffff;
+    display: inline;
+    height: 32px;
+    padding-left: 7px;
+    width: 65%;
+    @apply
+        border-solid
+        border-0
+        border-black
+        float-right
+        right-20
+        ml-auto
+        mr-10
+        mt-4
+        rounded-xl
+        shadow-xl
+}

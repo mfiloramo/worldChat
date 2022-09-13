@@ -28,6 +28,9 @@ function TestClient() {
       <button className={"btn"} onClick={() => {console.log('hello there!')}}>This is a Tailwind button</button>
     </div>
 
+    <input className={"chatInput"} type={"text"} placeholder={"Type your chat message here..."} />
+
+
     </div>
   )
 }
