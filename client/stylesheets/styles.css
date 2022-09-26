@@ -56,11 +56,11 @@ body {
     overflow: hidden;
     @apply
         bg-gradient-to-b from-sky-900 to-sky-700
-        border-r-2
+        /*border-r-2*/
         border-b-2
-        border-l-2
+        /*border-l-2*/
         border-blue-400
-        rounded-b-2xl
+        /*rounded-b-2xl*/
         shadow-xl
 }
 
